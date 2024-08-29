@@ -40,7 +40,7 @@ def create_dataframe_example(
             'Karen', 'Luis', 'Marina', 'Nina', 'Otávio', 'Paula', 'Quico', 'Rafa', 'Silvia', 'Thiago']
     nomes = nomes[:size]
     
-    nomes = np.random.choice(nomes, size=size)
+   # nomes = np.random.choice(nomes, size=size)
     nota1 = np.random.randint(50, 100, size=size)
     nota2 = np.random.randint(50, 100, size=size)
     turno = np.random.choice(['Manhã', 'Tarde', 'Noite'], size=size)
@@ -48,8 +48,8 @@ def create_dataframe_example(
     # Criando DataFrame
     df = pd.DataFrame({
         'Nome': nomes,
-        'Nota_1 Prova': nota1,
-        'Nota_2 Prova': nota2,
+        'Nota_1_Prova': nota1,
+        'Nota_2_Prova': nota2,
         'Turno': turno
     })
 
